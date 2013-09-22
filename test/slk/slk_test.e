@@ -41,7 +41,9 @@ feature
 			initialize
 			standard_window.put_string ("This Curses library does not support the ")
 			standard_window.put_string (args.argument(1).out)
-			standard_window.put_string (" mode.%NNCurses : 323, 444, 444i.  PDCurses : 323, 44, 55%N")
+			standard_window.put_string ("[
+	 mode.%NNCurses : 323, 444, 444i.  PDCurses : 323, 44, 55
+N")
 			standard_window.put_string ("Press any key to exit")
 			standard_window.read_character
 			die (-1)
@@ -99,12 +101,15 @@ feature
 	show_menu is
 		do
 			standard_window.move (menu_entry1,0)
-			standard_window.put_string ("* Get Label%N%
-							%* Clear%N%
-							%* Restore%N%
-						   	%* Set Attributes%N%
-							%* Set Label%N%
-							%* Quit%N");
+			standard_window.put_string (
+				"[
+				* Get Label
+				* Clear
+				* Restore
+				* Set Attributes
+				* Set Label
+				* Quit
+				]");
 			standard_window.move (menu_entry1,0)
 			standard_window.refresh
 		end
@@ -222,7 +227,9 @@ feature
 				else
 					standard_window.put_string ("bad index : must be between 1 and ")
 					standard_window.put_string (soft_label_keys.count.out)
-					standard_window.put_string ("%N");
+					standard_window.put_string ("[
+	
+N");
 				end
 			else
 				standard_window.put_string ("Wrong label number")
@@ -287,8 +294,11 @@ feature
 		do
 			initialize
 			standard_window.put_string (
-				"Usage: slk_test <mode>%N%
-				%       where mode is either 323, 44, 444, 444i or 55%N");
+				"[
+					Usage: slk_test <mode>%N
+
+		       where mode is either 323, 44, 444, 444i or 55%N
+	]");
 			standard_window.put_string ("Press a key to exit")
 			standard_window.read_character
 		end

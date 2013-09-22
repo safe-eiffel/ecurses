@@ -82,8 +82,9 @@ feature {NONE} -- Initialization
 		do
 			handle_curses_call (slk_init (mode), "slk_init")
 			if last_error = curses_error_value then
-				raise ("Wrong soft label key organization,%
-				% please see Curses, Ncurses, or PDCurses documentation");
+				raise ("[
+	Wrong soft label key organization, please see Curses, Ncurses, or PDCurses documentation
+	]");
 			end
 		end
 

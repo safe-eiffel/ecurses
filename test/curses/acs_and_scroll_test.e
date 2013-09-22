@@ -104,8 +104,10 @@ feature -- Commandes
 
 	windows : DS_LINKED_LIST [CURSES_PANEL]
 		
-	help_string : STRING is " W = create window   N = next window      P = previous window%N%
-				% F = scroll forward  B = scroll backward  Q = exit";
+	help_string : STRING is "[
+	 W = create window   N = next window      P = previous window
+	 F = scroll forward  B = scroll backward  Q = exit
+	]";
 
 	create_window is
 		local

@@ -1,7 +1,10 @@
 indexing
-	description: "Panel with a border, a header and a footer. %
-		    % A client subwindow is available %
-		    % It does not overlap neither the border nor the header or the footer";
+	description: "[
+	Panel with a border, a header and a footer. 
+
+		 A client subwindow is available 
+		 It does not overlap neither the border nor the header or the footer
+	]";
 	date: "$Date$";
 	revision: "$Revision$"
 

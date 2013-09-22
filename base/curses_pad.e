@@ -1,7 +1,10 @@
 indexing
-	description: 	"Curses PAD abstraction.  A pad is a rectangular section %
-		    	% on which one has a view through a window; this window usually%
-		    	% is smaller than the pad";
+	description: 	"[
+	Curses PAD abstraction.  A pad is a rectangular section 
+
+		 on which one has a view through a window; this window usually
+		 is smaller than the pad
+	]";
 	cluster: 	"ecurses, base"
     	interface: 	"client, classification"
     	status: 	"See notice at end of class"
